@@ -2,7 +2,7 @@ public class Character {
 
     private String name;
 
-    public Character(String name) {
+    public Character(String name, int roomId) {
         this.name = name;
     }
 
@@ -13,7 +13,5 @@ public class Character {
     public void setName(String name) {
         this.name = name;
     }
-
-    
     
 }
