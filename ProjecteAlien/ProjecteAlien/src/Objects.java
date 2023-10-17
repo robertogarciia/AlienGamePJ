@@ -1,15 +1,18 @@
+import java.util.ArrayList;
+
+import javax.management.ObjectName;
+
 public class Objects {
 
     private String name;
     private String description;
     private Boolean usable;
-    private Boolean pickable;
+    static public ArrayList<Objects> objeto;
 
-    public Objects(String name, String description, Boolean usable, Boolean pickable) {
+    public Objects(String name, String description, Boolean usable) {
         this.name = name;
         this.description = description;
         this.usable = usable;
-        this.pickable = pickable;
     }
 
     public String getName() {
@@ -36,14 +39,19 @@ public class Objects {
         this.usable = usable;
     }
 
-    public Boolean getPickable() {
-        return pickable;
+    static void establirObjectes(){
+        objeto = new ArrayList<Objects>();
+
+        Objects Mechanic_tool = new Objects("Eina mecanica", "L'eina mecanica es un objecte que es pot utilitzar per arreglar coses", true);
+        Objects Card_id = new Objects("Targeta Personal", "La pots utilitzar per obrir portes que estiguin tancades.", true);
+        Objects Card_id_mate = new Objects("Targeta del Company", "Aquesta targeta la pots utilitzar per obrir portes, pero has d'anar amb compte ja que al no ser teva l'alhilal no es fiara de tu!", true);
+        Objects Space_Suit = new Objects("Tratge Espacial", "Amb aquest tratge podras anar a la sala exterior sense perill", true);
+
+        objeto.add(Mechanic_tool);
+        objeto.add(Card_id);
+        objeto.add(Card_id_mate);
+
     }
-
-    public void setPickable(Boolean pickable) {
-        this.pickable = pickable;
-    };
-
     
 
 }

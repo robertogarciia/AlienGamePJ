@@ -5,12 +5,13 @@ public class Rooms {
     public static int roomId = 8;
     private String description;
     String name = "";
+    static public ArrayList<Rooms> objeto;
 
     public Rooms(int roomid, String description,String name) {
         this.roomId = roomId;
         this.description = description;
         this.name = name;
-        
+        Rooms.objeto = objeto;
     }
 
     public String getName() {
