@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     
     public static void main(String[] args){
-        Rooms.establirRoomsGame();
+        Rooms.makeroomsobjectsGame();
         
         Scanner sc = new Scanner(System.in);
         boolean jocacabat = false;
@@ -47,41 +47,39 @@ public class Main {
 
         }
 
-public void DiscoverItems(){
-    int roomId = Rooms.getRoomId();
-    switch(roomId){
-        case 1:
-                System.out.println("Has trobat la "+Objects.objeto.get(1).getName()+ "\n Descripció : "+Objects.objeto.get(1).getDescription());
-            break;
-        case 2:
-                System.out.println("Has trobat la "+Objects.objeto.get(2).getName()+ "\n Descripció : "+Objects.objeto.get(2).getDescription());
-            break;
-        case 3:
-                System.out.println("Has trobat la "+Objects.objeto.get(3).getName()+ "\n Descripció : "+Objects.objeto.get(3).getDescription());
-            break;
-        case 4:
-                System.out.println("Has trobat la "+Objects.objeto.get(4).getName()+ "\n Descripció : "+Objects.objeto.get(4).getDescription());
-            break;
-        case 5:
-                System.out.println("Has trobat la "+Objects.objeto.get(5).getName()+ "\n Descripció : "+Objects.objeto.get(1).getDescription());
-            break;
-        case 6:
-                System.out.println("Has trobat la "+Objects.objeto.get(6).getName()+ "\n Descripció : "+Objects.objeto.get(6).getDescription());
-            break;
-        case 7:
-                System.out.println("Has trobat la "+Objects.objeto.get(7).getName()+ "\n Descripció : "+Objects.objeto.get(7).getDescription());
-            break;
-        case 8:
-                System.out.println("Has trobat la "+Objects.objeto.get(8).getName()+ "\n Descripció : "+Objects.objeto.get(8).getDescription());
-            break;
-        case 9:
-                System.out.println("Has trobat la "+Objects.objeto.get(9).getName()+ "\n Descripció : "+Objects.objeto.get(9).getDescription());
-            break;
-        
+
+    public static void DiscoverItems(){
+        int roomId = Rooms.getRoomId();
+        switch(roomId){
+            case 1:
+                    System.out.println();
+                break;
+            case 2:
+                    System.out.println();
+                break;
+            case 3:
+                    System.out.println();
+                break;
+            case 4:
+                    System.out.println();
+                break;
+            case 5:
+                    System.out.println();
+                break;
+            case 6:
+                    System.out.println();
+                break;
+            case 7:
+                    System.out.println();
+                break;
+            case 8:
+                    System.out.println();
+                break;
+            case 9:
+                    System.out.println();
+                break;
+            
+        }
     }
-}
         
 }
-
-    
-

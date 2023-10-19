@@ -1,8 +1,10 @@
-public class Suit {
-
+public class Suit extends Objects {
+    
     private Boolean suitOn;
 
-    public Suit(Boolean suitOn) {
+    public Suit(String name, String description, Boolean usable, Boolean suitOn) {
+        super(name, description, usable);
+        
         this.suitOn = suitOn;
     }
 
@@ -13,5 +15,9 @@ public class Suit {
     public void setSuitOn(Boolean suitOn) {
         this.suitOn = suitOn;
     }
+
+    
+
+   
     
 }
