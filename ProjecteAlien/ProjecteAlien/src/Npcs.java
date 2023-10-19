@@ -1,8 +1,10 @@
-public class Npcs {
+public class Npcs extends Character{
 
     private String dialogue;
 
-    public Npcs(String dialogue) {
+    public Npcs(String name, int roomId, String dialogue) {
+        super(name, roomId);
+       
         this.dialogue = dialogue;
     }
 
@@ -13,5 +15,7 @@ public class Npcs {
     public void setDialogue(String dialogue) {
         this.dialogue = dialogue;
     }
+
+    
 
 }

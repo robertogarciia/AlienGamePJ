@@ -1,8 +1,10 @@
-public class Player {
+public class Player extends Character{
 
     private Boolean life;
 
-    public Player(Boolean life) {
+    public Player(String name, int roomId, Boolean life) {
+        super(name, roomId);
+        
         this.life = life;
     }
 
@@ -13,7 +15,5 @@ public class Player {
     public void setLife(Boolean life) {
         this.life = life;
     }
-
-    
 
 }

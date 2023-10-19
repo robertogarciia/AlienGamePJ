@@ -8,5 +8,13 @@ public class Donuts extends Objects{
         this.eaten = eaten;
        
     }
+
+    public Boolean getEaten() {
+        return eaten;
+    }
+
+    public void setEaten(Boolean eaten) {
+        this.eaten = eaten;
+    }
     
 }
