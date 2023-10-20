@@ -121,18 +121,16 @@ public void principal(){
     
     public  void DiscoverItems(){
 
-          /*for (Rooms room : rooms){
+        System.out.println("A la zona " + rooms.get(p.getRoomId()).getName() + " hay los siguientes objetos:\n");
 
-          }*/
-
-        for(Objects objeto : rooms.get(p.getRoomId()).object){
-            System.out.println(objeto.getName() + ":" + objeto.getDescription());
+        if (!rooms.get(p.getRoomId()).object.isEmpty()) {
+            for (Objects objeto : rooms.get(p.getRoomId()).object) {
+                System.out.println("- " + objeto.getName() + ": " + objeto.getDescription() + "\n");
+            }
+        } else {
+            System.out.println("No hi han objectes a la zona.\n");
         }
-
-
        
-        
-        
     }
     
     //Codi per moure el personatje 
@@ -145,8 +143,8 @@ public void principal(){
         System.out.println("A quina habitacio et vols moure");
         switch(p.getRoomId()){
             case 1:
-                System.out.println("Estan al "+ rooms.get(1).getName() +", nomes pots anar cap a les oficines(2)"+rooms.get(3).getName()+".");
-                System.out.println("Vols avançar(1) o mantenir-te(2) al taller?");
+                System.out.println("Estas al "+ rooms.get(1).getName() +"Vols avançar(1) o mantenir-te(2)?, nomes pots anar cap a les oficines(2)"+rooms.get(3).getName()+".");
+                System.out.println("");
                 moures = scan.nextInt();
 
                 if(moures == 1){   

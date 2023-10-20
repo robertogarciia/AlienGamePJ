@@ -1,16 +1,14 @@
-import java.util.*;
-
 public class Objects {
 
     private String name;
     private String description;
-    private Boolean usable;
+    private Boolean take;
     
 
-    public Objects(String name, String description, Boolean usable) {
+    public Objects(String name, String description, Boolean take) {
         this.name = name;
         this.description = description;
-        this.usable = usable;
+        this.take = take;
     }
 
     public String getName() {
@@ -29,12 +27,12 @@ public class Objects {
         this.description = description;
     }
 
-    public Boolean getUsable() {
-        return usable;
+    public Boolean getTake() {
+        return take;
     }
 
-    public void setUsable(Boolean usable) {
-        this.usable = usable;
+    public void setTake(Boolean usable) {
+        this.take = usable;
     }    
 
 }
